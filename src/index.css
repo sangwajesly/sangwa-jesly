@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #050505;
+  --fg: #fcfcfc;
+  --muted: #808080;
+  --accent: #ff3e00;
+  --border: #1a1a1a;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--bg)] text-[var(--fg)] antialiased selection:bg-[var(--accent)] selection:text-white;
+  }
+}
+
+@layer components {
+  .border-text {
+    -webkit-text-stroke: 1px var(--fg);
+    color: transparent;
+  }
+}
