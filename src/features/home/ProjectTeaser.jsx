@@ -4,7 +4,7 @@ export const ProjectTeaser = ({ project, index }) => {
   const isEven = index % 2 === 0;
 
   return (
-    <div className={`group relative py-20 md:py-40 border-b border-[var(--border)] overflow-hidden`}>
+    <div className={`max-w-[1440px] mx-auto group relative py-20 md:py-40 border-b border-[var(--border)] overflow-hidden`}>
       <Grid className="items-center">
         {/* Project Visual */}
         <div className={`col-span-4 md:col-span-7 ${isEven ? 'md:order-1' : 'md:order-2'}`}>

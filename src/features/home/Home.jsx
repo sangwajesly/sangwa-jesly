@@ -31,9 +31,9 @@ export const Home = () => {
             </div>
             <div>
               <h4 className="font-bold uppercase mb-2">Connect</h4>
-              <p className="text-[var(--muted)]">Phone: +237 680 692 014</p>
+              <p className="text-[var(--muted)]">Phone: +237 682 833 601</p>
               <p className="text-[var(--muted)]">
-                Email: sangwa.jesly@gmail.com
+                Email: sangwajesly82@gmail.com
               </p>
               <p className="text-[var(--muted)]">Location: Bamenda, Cameroon</p>
             </div>

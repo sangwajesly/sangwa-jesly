@@ -23,16 +23,16 @@ export const Contact = () => {
                   href="mailto:sangwa.jesly@gmail.com"
                   className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors"
                 >
-                  sangwa.jesly@gmail.com
+                  sangwajesly82@gmail.com
                 </a>
               </div>
               <div>
                 <h3 className="font-bold uppercase mb-2">Phone</h3>
                 <a
-                  href="tel:+237680692014"
+                  href="tel:+237682833601"
                   className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors"
                 >
-                  +237 680 692 014
+                  +237 682833601
                 </a>
               </div>
               <div>

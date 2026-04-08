@@ -49,7 +49,7 @@ export const Header = () => {
 
           <Link
             to="/contact"
-            className="ml-4 px-5 py-2 border border-[var(--border)] hover:border-[var(--fg)] transition-all text-[10px] uppercase tracking-widest"
+            className="ml-4 px-5 py-2 border border-[var(--accent)] hover:border-[var(--fg)] transition-all text-[10px] uppercase tracking-widest"
           >
             Let's Talk
           </Link>

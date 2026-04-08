@@ -1,11 +1,12 @@
 import { Section } from "../../components/layout/Section";
 import { Grid } from "../../components/shared/Grid";
+import mypic from "../../assets/Sangwa Jesly.jpg";
 
 export const Hero = () => {
   return (
     <Section className="min-h-[90vh] flex items-center pt-32 pb-16">
       <Grid>
-        <div className="col-span-4 md:col-span-8 lg:col-span-10">
+        <div className="col-span-4 md:col-span-8 lg:col-span-8">
           <h1 className="text-5xl md:text-7xl lg:text-8xl leading-[0.9] font-display font-bold tracking-tight mb-8">
             Engineering <br />
             Digital <br />
@@ -40,14 +41,11 @@ export const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="col-span-4 md:col-span-4 lg:col-span-2 flex items-center justify-center">
+        <div className="col-span-4 md:col-span-4 lg:col-span-4 flex items-center justify-center">
           <div className="text-center">
-            <div className="w-32 h-32 md:w-40 md:h-40 bg-[var(--accent)] rounded-full flex items-center justify-center text-[var(--bg)] font-display font-bold text-2xl md:text-3xl">
-              SJ
+            <div className="">
+              <img src={mypic} alt="Sangwa Jesly" className="rotate-3 border-8 grayscale grayscale-25 border-[var(--fg)]" />
             </div>
-            <p className="mt-4 text-sm text-[var(--muted)] uppercase tracking-wide">
-              Sangwa Jesly
-            </p>
           </div>
         </div>
       </Grid>
