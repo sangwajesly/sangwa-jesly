@@ -1,6 +1,6 @@
 import { Section } from "../../components/layout/Section";
 import { Grid } from "../../components/shared/Grid";
-import mypic from "../../assets/Sangwa Jesly.jpg";
+import mypic from "../../assets/sangwa-jesly.jpg";
 
 export const Hero = () => {
   return (
