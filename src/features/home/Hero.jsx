@@ -4,8 +4,8 @@ import mypic from "../../assets/sangwa-jesly.jpg";
 
 export const Hero = () => {
   return (
-    <Section className="min-h-[90vh] flex items-center pt-32 pb-16">
-      <Grid>
+    <Section className="min-h-[90vh] flex items-start lg:items-center pt-32 pb-16">
+      <Grid className="items-center gap-10 lg:gap-16">
         <div className="col-span-4 md:col-span-8 lg:col-span-8">
           <h1 className="text-5xl md:text-7xl lg:text-8xl leading-[0.9] font-display font-bold tracking-tight mb-8">
             Engineering <br />
@@ -44,7 +44,11 @@ export const Hero = () => {
         <div className="col-span-4 md:col-span-4 lg:col-span-4 flex items-center justify-center">
           <div className="text-center">
             <div className="">
-              <img src={mypic} alt="Sangwa Jesly" className="rotate-3 border-8 grayscale grayscale-25 border-[var(--fg)]" />
+              <img
+                src={mypic}
+                alt="Sangwa Jesly"
+                className="rotate-3 border-8 grayscale grayscale-25 border-[var(--fg)] transition-all duration-500 hover:grayscale-0"
+              />
             </div>
           </div>
         </div>
