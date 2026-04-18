@@ -14,6 +14,12 @@
   body {
     @apply bg-[var(--bg)] text-[var(--fg)] antialiased selection:bg-[var(--accent)] selection:text-white;
   }
+  
+  @media (min-width: 768px) {
+    * {
+      cursor: none !important;
+    }
+  }
 }
 
 @layer components {

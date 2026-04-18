@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Layout } from "../../components/layout/Layout";
 import { Section } from "../../components/layout/Section";
 import { Grid } from "../../components/shared/Grid";
+import { SEO } from "../../components/shared/SEO";
 import { PROJECTS } from "../../data/projects";
 import { ArrowLeft } from "lucide-react";
 
@@ -32,6 +33,12 @@ export const ProjectDetail = () => {
 
   return (
     <Layout>
+      <SEO 
+        title={project.title} 
+        description={project.description} 
+        image={project.image} 
+        url={`/projects/${project.slug}`} 
+      />
       {/* Hero Section */}
       <Section className="pt-32 pb-16">
         <Grid>

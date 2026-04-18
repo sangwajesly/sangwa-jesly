@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { Grid } from "../../components/shared/Grid";
 
 export const ProjectTeaser = ({ project, index }) => {
   const isEven = index % 2 === 0;
 
   return (
-    <div
-      className={`max-w-[1440px] mx-auto  relative py-20 md:py-40 border-b border-[var(--border)] overflow-hidden`}
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
+      className={`max-w-[1440px] mx-auto relative py-20 md:py-40 border-b border-[var(--border)] overflow-hidden group`}
     >
       <Grid className="items-center">
         {/* Project Visual */}
@@ -17,10 +22,12 @@ export const ProjectTeaser = ({ project, index }) => {
             to={`/projects/${project.slug}`}
             className="relative block aspect-[16/10] bg-[var(--border)] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 ease-in-out cursor-pointer"
           >
-            <img
+            <motion.img
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 1 }}
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover transform scale-100 hover:scale-105 transition-transform duration-1000"
+              className="w-full h-full object-cover"
             />
             <div className="absolute top-8 left-8 p-4 bg-[var(--bg)]/90 backdrop-blur-sm border border-[var(--border)]">
               <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--accent)]">
@@ -58,9 +65,14 @@ export const ProjectTeaser = ({ project, index }) => {
         </div>
       </Grid>
 
-      <span className="absolute -bottom-10 -right-20 text-[20vw] font-bold text-white/5 uppercase select-none pointer-events-none -z-10 group-hover:text-[var(--accent)]/10 transition-colors duration-700">
+      <motion.span 
+        initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 0.05 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="absolute -bottom-10 -right-20 text-[20vw] font-bold text-white uppercase select-none pointer-events-none -z-10 group-hover:text-[var(--accent)] transition-colors duration-700"
+      >
         {project.title}
-      </span>
-    </div>
+      </motion.span>
+    </motion.div>
   );
 };
