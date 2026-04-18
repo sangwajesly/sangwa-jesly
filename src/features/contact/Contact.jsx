@@ -102,7 +102,7 @@ export const Contact = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <input type="hidden" name="access_key" value="0c017c8b-26cf-4949-927f-39bbf79cee30" />
+                <input type="hidden" name="access_key" value={import.meta.env.VITE_WEB3FORMS_ACCESS_KEY} />
                 <input type="hidden" name="subject" value="New Contact Form Submission" />
                 <input type="checkbox" name="botcheck" className="hidden" />
                 
