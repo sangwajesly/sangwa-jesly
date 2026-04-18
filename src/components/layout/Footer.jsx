@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="py-20 bg-[var(--bg)] border-t border-[var(--border)]">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+    <footer className="py-20 bg-[var(--bg)] border-t border-[var(--border)] w-full">
+      <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24 w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold uppercase mb-4">

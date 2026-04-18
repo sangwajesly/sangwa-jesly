@@ -18,7 +18,7 @@ export const Header = () => {
           : "py-8"
       }`}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex justify-between items-center">
+      <div className="max-w-[1440px] mx-auto px-8 md:px-16 lg:px-24 flex justify-between items-center w-full">
         <Link to="/" className="flex flex-col">
           <span className="font-bold uppercase tracking-tighter text-xl leading-none">
             Sangwa Jesly

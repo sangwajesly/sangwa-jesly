@@ -4,12 +4,17 @@ import { motion, useSpring, useMotionValue } from "framer-motion";
 export const CustomCursor = () => {
   const [isHovering, setIsHovering] = useState(false);
   
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
+  const mouseX = useMotionValue(-100);
+  const mouseY = useMotionValue(-100);
 
-  const springConfig = { damping: 25, stiffness: 250 };
-  const cursorX = useSpring(mouseX, springConfig);
-  const cursorY = useSpring(mouseY, springConfig);
+  // Faster spring for the main dot, slower for the outer ring
+  const dotSpringConfig = { damping: 20, stiffness: 800 };
+  const ringSpringConfig = { damping: 30, stiffness: 200 };
+  
+  const dotX = useSpring(mouseX, dotSpringConfig);
+  const dotY = useSpring(mouseY, dotSpringConfig);
+  const ringX = useSpring(mouseX, ringSpringConfig);
+  const ringY = useSpring(mouseY, ringSpringConfig);
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -40,29 +45,31 @@ export const CustomCursor = () => {
 
   return (
     <>
+      {/* Small central dot - perfectly centered by offsetting half its width/height */}
       <motion.div
-        className="fixed top-0 left-0 w-4 h-4 bg-[var(--accent)] rounded-full pointer-events-none z-[9999] mix-blend-difference hidden md:block"
+        className="fixed top-0 left-0 w-2 h-2 bg-[var(--accent)] rounded-full pointer-events-none z-[9999] mix-blend-difference hidden md:block"
         style={{
-          x: cursorX,
-          y: cursorY,
-          translateX: "-50%",
-          translateY: "-50%",
+          x: dotX,
+          y: dotY,
+          left: -4, // -w/2
+          top: -4,  // -h/2
         }}
         animate={{
-          scale: isHovering ? 2.5 : 1,
+          scale: isHovering ? 4 : 1,
         }}
       />
+      {/* Outer ring - perfectly centered */}
       <motion.div
-        className="fixed top-0 left-0 w-8 h-8 border border-[var(--fg)] rounded-full pointer-events-none z-[9998] hidden md:block"
+        className="fixed top-0 left-0 w-8 h-8 border border-[var(--accent)] rounded-full pointer-events-none z-[9998] hidden md:block"
         style={{
-          x: cursorX,
-          y: cursorY,
-          translateX: "-50%",
-          translateY: "-50%",
+          x: ringX,
+          y: ringY,
+          left: -16, // -w/2
+          top: -16,  // -h/2
         }}
         animate={{
           scale: isHovering ? 1.5 : 1,
-          opacity: isHovering ? 0 : 0.5,
+          opacity: isHovering ? 0.3 : 0.6,
         }}
         transition={{ duration: 0.3 }}
       />
