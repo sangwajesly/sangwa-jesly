@@ -47,7 +47,7 @@ export const Hero = () => {
               <img
                 src={mypic}
                 alt="Sangwa Jesly"
-                className="rotate-3 border-8 grayscale grayscale-25 border-[var(--fg)] transition-all duration-500 hover:grayscale-0"
+                className="rotate-3 border-8 grayscale grayscale-75 border-[var(--fg)] transition-all duration-500 hover:grayscale-25 hover:rotate-0 hover:scale-125  xs:rotate-0 xs:scale-100"
               />
             </div>
           </div>

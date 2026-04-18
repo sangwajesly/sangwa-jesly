@@ -1,6 +1,7 @@
 import { Layout } from "../../components/layout/Layout";
 import { Section } from "../../components/layout/Section";
 import { Grid } from "../../components/shared/Grid";
+import { Mail, MessageCircle } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -16,24 +17,34 @@ export const Contact = () => {
               application, brand redesign, or AI automation solution, I'd love
               to hear about your project.
             </p>
-            <div className="space-y-6">
+            
+            <div className="flex flex-wrap gap-4 mb-12">
+              <a
+                href="mailto:sangwajesly82@gmail.com"
+                className="inline-flex items-center gap-3 px-6 py-4 bg-[var(--fg)] text-[var(--bg)] font-medium uppercase text-xs tracking-widest hover:bg-[var(--accent)] hover:text-white transition-all"
+              >
+                <Mail size={18} />
+                Send Email
+              </a>
+              <a
+                href="https://wa.me/237682833601"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-6 py-4 border border-[var(--fg)] text-[var(--fg)] font-medium uppercase text-xs tracking-widest hover:bg-[var(--fg)] hover:text-[var(--bg)] transition-all"
+              >
+                <MessageCircle size={18} />
+                WhatsApp Me
+              </a>
+            </div>
+
+            <div className="space-y-6 pt-8 border-t border-[var(--border)]">
               <div>
                 <h3 className="font-bold uppercase mb-2">Email</h3>
-                <a
-                  href="mailto:sangwa.jesly@gmail.com"
-                  className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors"
-                >
-                  sangwajesly82@gmail.com
-                </a>
+                <p className="text-[var(--muted)]">sangwajesly82@gmail.com</p>
               </div>
               <div>
                 <h3 className="font-bold uppercase mb-2">Phone</h3>
-                <a
-                  href="tel:+237682833601"
-                  className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors"
-                >
-                  +237 682833601
-                </a>
+                <p className="text-[var(--muted)]">+237 682 833 601</p>
               </div>
               <div>
                 <h3 className="font-bold uppercase mb-2">Location</h3>
