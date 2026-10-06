@@ -1,0 +1,25 @@
+export const siteConfig = {
+  name: "Sangwa Jesly",
+  title: "Designer & Software Engineer",
+  location: "",
+  email: "sangwajesly82@gmail.com",
+  phone: "+237 682 833 601",
+  whatsappNumber: "237682833601",
+  whatsappLink:
+    "https://wa.me/237682833601?text=Hello%20Jesly%2C%20I%20found%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project.",
+  socials: {
+    github: "https://github.com/sangwajesly",
+    linkedin: "https://www.linkedin.com/in/sangwajesly",
+    facebook: "https://facebook.com/sangwajesly",
+    twitter: "https://x.com/sangwajesly",
+    tiktok: "https://www.tiktok.com/@sangwa.jesly",
+  },
+  github: "https://github.com/sangwajesly",
+  linkedin: "https://www.linkedin.com/in/sangwajesly",
+  facebook: "https://facebook.com/sangwajesly",
+  twitter: "https://x.com/sangwajesly",
+  tiktok: "https://www.tiktok.com/@sangwa.jesly",
+  replyTime: "within a few hours",
+  availability: "Available for new projects",
+  clients: ["NervTek", "CivilSalt", "Klarify", "Bongbine Ltd", "Traitz Tech"],
+};
