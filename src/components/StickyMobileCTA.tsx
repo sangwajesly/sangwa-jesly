@@ -28,13 +28,13 @@ export function StickyMobileCTA() {
         href={siteConfig.whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 bg-accent text-bg py-3 text-center text-sm font-bold rounded-xl min-h-[44px] flex items-center justify-center"
+        className="flex-1 bg-accent text-bg py-3 text-center text-sm font-bold rounded-xl min-h-11 flex items-center justify-center"
       >
         Chat on WhatsApp
       </a>
       <a
         href={"mailto:" + siteConfig.email}
-        className="flex-1 border border-border text-fg py-3 text-center text-sm font-bold rounded-xl min-h-[44px] flex items-center justify-center"
+        className="flex-1 border border-border text-fg py-3 text-center text-sm font-bold rounded-xl min-h-11 flex items-center justify-center"
       >
         Email
       </a>

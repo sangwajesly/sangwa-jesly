@@ -6,7 +6,7 @@ export function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className="border-t border-border">
-      <div className="max-w-[1200px] mx-auto px-6 md:px-10 py-16 md:py-24">
+      <div className="max-w-300 mx-auto px-6 md:px-10 py-16 md:py-24">
         {/* Giant name wordmark */}
         <div className="mb-16">
           <p className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold leading-none tracking-tight">

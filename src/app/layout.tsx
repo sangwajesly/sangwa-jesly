@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sangwajesly.vercel.app"),
   title: {
     template: "%s | Sangwa Jesly",
-    default: "Sangwa Jesly | Designer & Software Engineer",
+    default: "Sangwa Jesly | Brand Designer & Developer",
   },
-  description: "I design brands, build web & AI applications, and create automations for businesses and startups.",
+  description: "I help businesses turn ideas into brands, digital products and software solutions.",
   openGraph: {
-    title: "Sangwa Jesly | Designer & Software Engineer",
-    description: "I design brands, build web & AI applications, and create automations for businesses and startups.",
+    title: "Sangwa Jesly | Brand Designer & Developer",
+    description: "I help businesses turn ideas into brands, digital products and software solutions.",
     url: "https://sangwajesly.vercel.app",
     siteName: "Sangwa Jesly",
     images: [{ url: "/brand/og-default.jpg", width: 1200, height: 630 }],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${newsreader.variable}`}>
       <body className="min-h-screen bg-bg text-fg font-sans antialiased relative">
         <a href="#main" className="skip-link">Skip to content</a>
         {children}

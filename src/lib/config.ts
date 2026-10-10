@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Sangwa Jesly",
-  title: "Designer & Software Engineer",
+  title: "Brand Designer & Developer",
   location: "",
   email: "sangwajesly82@gmail.com",
   phone: "+237 682 833 601",
@@ -19,7 +19,7 @@ export const siteConfig = {
   facebook: "https://facebook.com/sangwajesly",
   twitter: "https://x.com/sangwajesly",
   tiktok: "https://www.tiktok.com/@sangwa.jesly",
-  replyTime: "within a few hours",
+  replyTime: "a few hours",
   availability: "Available for new projects",
   clients: ["NervTek", "CivilSalt", "Klarify", "Bongbine Ltd", "Traitz Tech"],
 };

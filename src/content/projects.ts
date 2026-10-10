@@ -33,7 +33,7 @@ export const projects: Project[] = [
     client: "Bongbine Ltd",
     role: "Brand designer",
     summary:
-      "A complete brand identity for Bongbine Ltd, so the company looks professional and consistent everywhere customers see it.",
+      "A complete visual identity designed to give Bongbine Ltd a professional, consistent presence across its digital and physical touchpoints.",
     related: ["bongbine-website"],
     published: true,
     images: { cover: "/work/bongbine-brand-identity/cover.jpg", gallery: [] },
@@ -48,7 +48,7 @@ export const projects: Project[] = [
     client: "NervTek",
     role: "Brand and graphic designer",
     summary:
-      "Event branding for the launch of the NervTek community in Bamenda, so the whole event looked like one connected brand.",
+      "Event branding created to give the NervTek community launch a cohesive and recognizable visual identity across its event materials.",
     related: ["drone-up-cameroon"],
     published: true,
     images: {
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     year: "",
     client: "NervTek",
     role: "Brand and graphic designer",
-    summary: "Event branding for Drone Up Cameroon, created for NervTek.",
+    summary: "Event branding created for Drone Up Cameroon as part of NervTek's event and community activities.",
     related: ["nervtek-community-launch"],
     published: true,
     images: { cover: "/work/drone-up-cameroon/cover.jpg", gallery: [] },
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     client: "Bongbine Ltd",
     role: "Web designer and developer",
     summary:
-      "A website for Bongbine Ltd that shows what the company offers and makes it easy to get in touch.",
+      "A responsive business website designed to clearly communicate Bongbine Ltd's services and make it easier for potential customers to get in touch.",
     liveUrl: "https://bongbineltd.com",
     related: ["bongbine-brand-identity"],
     published: true,
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     client: "Klarify",
     role: "Web designer and developer",
     summary:
-      "A website for Klarify that explains what they do and helps visitors take the next step.",
+      "A student-focused platform designed to help users discover academic pathways and make better-informed decisions about what to do next.",
     liveUrl: "https://klarifypath.com",
     published: true,
     images: { cover: "/work/klarify-website/cover.jpg", gallery: [] },
@@ -111,7 +111,7 @@ export const projects: Project[] = [
     client: "CivilSalt",
     role: "Graphic designer",
     summary:
-      "Flyers, plus a set of icons and badges, for CivilSalt's online learning platform.",
+      "Marketing and visual assets created for CivilSalt's online learning platform, including promotional flyers, icons and badges.",
     published: true,
     images: {
       cover: "/work/civilsalt-learning-platform/cover.jpg",
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     year: "",
     client: "Traitz Tech",
     role: "Graphic designer (volunteer)",
-    summary: "Social media flyers for Traitz Tech, created as a volunteer.",
+    summary: "Social media marketing designs created for Traitz Tech.",
     published: true,
     images: {
       cover: "/work/traitz-tech-social-media/cover.jpg",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     client: "Individuals and small businesses",
     role: "Graphic designer",
     summary:
-      "Flyers made for individuals and small businesses to announce, promote and sell.",
+      "Marketing flyers created for individuals and small businesses to communicate offers, promote services and reach potential customers.",
     published: true,
     images: { cover: "/work/business-flyers/cover.jpg", gallery: [] },
   },

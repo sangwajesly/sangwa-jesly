@@ -5,7 +5,7 @@ import { MobileMenu } from "./MobileMenu";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-bg/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-[1200px] mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
+      <div className="max-w-300 mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
         <Link href="/" className="font-serif font-bold text-xl hover:text-accent transition-colors">
           {siteConfig.name}
         </Link>

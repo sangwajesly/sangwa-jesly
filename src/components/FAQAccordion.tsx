@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Can you help my business figure out where to use AI or automations?",
-    a: "Yes. We start by looking at your day-to-day manual tasks, like answering inquiries, managing customer records, or processing files. From there, I build clean, reliable automations that save you and your team hours every week.",
+    a: "Yes. Not every business problem needs AI. I can look at your workflow, identify repetitive or information-heavy processes, and recommend where AI or automation could genuinely create value.",
   },
   {
     q: "Do you work with clients remotely or internationally?",
